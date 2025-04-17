@@ -18,7 +18,7 @@ public static class SendMessage
             IMPORTANT: The endpoint is case-sensitive so make sure the queue name you put here is the EXACT SAME queue name used in the consumer module.
             Hiccups can occur while the bus is starting up, so make sure to test the interaction of the modules multiple times. It helps to reset the queue states via the RabbitMQ Interface for every test.
         */
-        string queueName = "Bill";
+        string queueName = "qryname";
 
         // Configure Serilog to write logs to an Elasticsearch sink
         Log.Logger = new LoggerConfiguration()
